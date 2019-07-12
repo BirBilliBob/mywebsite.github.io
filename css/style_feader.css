@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 970px;
+    border: 1px dashed blue;
+    margin: 0 auto;
+}
+.header{
+    position: fixed;
+    width: 100%;
+}
+.header .container{
+    height: 80px;
+    line-height: 80px;
+}
+.header .container div{
+    display: inline-block;
+    border: 1px solid black;
+}
+.header .container div h1{
+    margin:0;
+    font-size: 1.7em
+}
+nav{
+    float: right;
+    margin: 0;
+    line-height: 76px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+nav li{
+    display: inline-block;
+    font-size: 1.5em;
+}
+nav li:not(:first-child):before{
+    content: "•";
+    margin-left: 5px;
+    margin-right: 8px;
+}
+nav li:not(:first-child) a{
+    margin-left: 10px;
+}
+nav li:not(:last-child) a{
+    margin-right: 10px;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
